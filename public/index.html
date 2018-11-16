@@ -9,8 +9,11 @@
 
     <link rel="stylesheet" type="text/css" href="simple-grid.css">
     <link rel="stylesheet" type="text/css" href="custom.css">
+    <script  type="text/javascript">
+        var key = "{{key}}";
+    </script>
 </head>
-<body>
+<body class="bg">
 
 <div class="container">
     <div class="row">
@@ -28,7 +31,9 @@
     <div class="row">
 
         <div class="col-12">
-            a
+
+            <input type="text" class="text-box" placeholder="TYPE HERE A MESSAGE TO SEND AND PRESS ENTER..."/>
+
         </div>
 
     </div>
@@ -36,6 +41,7 @@
 </div>
 
 
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

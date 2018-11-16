@@ -16,3 +16,15 @@ navigator.getMedia(
     }
 
 );
+
+
+var connection = new WebSocket('ws://localhost:9090');
+
+connection.onopen = function () {
+    send({type:"new_room", key:key});
+};
+
+// Alias for sending messages in JSON format
+function send(message) {
+    connection.send(JSON.stringify(message));
+}
